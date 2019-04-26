@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B0CF963565197FC064A0C1E /* Pods_TREEL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75735664FF7250C3A53BB18A /* Pods_TREEL.framework */; };
+		93654EED22707221005FDB1B /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EE822707221005FDB1B /* APIError.swift */; };
+		93654EEE22707221005FDB1B /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EEA22707221005FDB1B /* ApiResponse.swift */; };
+		93654EEF22707221005FDB1B /* APIException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EEB22707221005FDB1B /* APIException.swift */; };
+		93654EF022707222005FDB1B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EEC22707221005FDB1B /* ApiClient.swift */; };
+		93654EF42270739E005FDB1B /* TireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EF32270739E005FDB1B /* TireViewModel.swift */; };
+		93654EF6227073BA005FDB1B /* TiresResponceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EF5227073BA005FDB1B /* TiresResponceModel.swift */; };
+		93654EFA22709850005FDB1B /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EF72270984F005FDB1B /* ChartSeries.swift */; };
+		93654EFB22709850005FDB1B /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EF82270984F005FDB1B /* ChartColors.swift */; };
+		93654EFC22709850005FDB1B /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EF922709850005FDB1B /* Chart.swift */; };
+		93654EFE2270A00D005FDB1B /* TempPressRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654EFD2270A00D005FDB1B /* TempPressRespModel.swift */; };
+		939B160E226F234E0057ABEA /* KnowUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B160D226F234E0057ABEA /* KnowUsVC.swift */; };
+		939B1610226F23780057ABEA /* KnowProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B160F226F23780057ABEA /* KnowProductVC.swift */; };
+		939B1612226F43BF0057ABEA /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B1611226F43BF0057ABEA /* DemoViewController.swift */; };
+		939B1614226F45CE0057ABEA /* VehicleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B1613226F45CE0057ABEA /* VehicleVC.swift */; };
+		939B1618227043B50057ABEA /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B1617227043B50057ABEA /* CircularProgress.swift */; };
+		939B161D227056610057ABEA /* TwentyTiresVehicleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B161C227056610057ABEA /* TwentyTiresVehicleVC.swift */; };
+		939B161F22705A790057ABEA /* TireParameterControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B161E22705A790057ABEA /* TireParameterControl.swift */; };
+		939B162122705A960057ABEA /* TireParameterControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 939B162022705A960057ABEA /* TireParameterControl.xib */; };
+		93B22E38226DB54200301B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B22E37226DB54200301B83 /* AppDelegate.swift */; };
+		93B22E3A226DB54200301B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B22E39226DB54200301B83 /* ViewController.swift */; };
+		93B22E3D226DB54200301B83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B22E3B226DB54200301B83 /* Main.storyboard */; };
+		93B22E3F226DB54A00301B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B22E3E226DB54A00301B83 /* Assets.xcassets */; };
+		93B22E42226DB54A00301B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B22E40226DB54A00301B83 /* LaunchScreen.storyboard */; };
+		93E5D907226DBCB1001A4B58 /* treelVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 93E5D906226DBCB0001A4B58 /* treelVideo.mp4 */; };
+		93E5D909226DC60F001A4B58 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E5D908226DC60F001A4B58 /* MasterViewController.swift */; };
+		93E5D90B226DC628001A4B58 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E5D90A226DC628001A4B58 /* BaseViewController.swift */; };
+		93E5D91C226DC9BE001A4B58 /* Exo-Semi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93E5D917226DC9BE001A4B58 /* Exo-Semi-Bold.ttf */; };
+		93E5D91D226DC9BE001A4B58 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93E5D918226DC9BE001A4B58 /* Lato-Bold.ttf */; };
+		93E5D91E226DC9BE001A4B58 /* Exo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93E5D919226DC9BE001A4B58 /* Exo-Regular.ttf */; };
+		93E5D91F226DC9BE001A4B58 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93E5D91A226DC9BE001A4B58 /* Lato-Regular.ttf */; };
+		93E5D920226DC9BE001A4B58 /* Exo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93E5D91B226DC9BE001A4B58 /* Exo-Bold.ttf */; };
+		93E5D922226DCAC0001A4B58 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E5D921226DCAC0001A4B58 /* VehicleViewController.swift */; };
+		93E5D924226DCE95001A4B58 /* VehicleDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E5D923226DCE95001A4B58 /* VehicleDetailsVC.swift */; };
+		93E5D92B226ED146001A4B58 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E5D928226ED145001A4B58 /* BLEManager.swift */; };
+		93E5D92C226ED146001A4B58 /* SensorDetectionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E5D929226ED145001A4B58 /* SensorDetectionEvent.swift */; };
+		93E5D92D226ED146001A4B58 /* LogicareTreelTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E5D92A226ED145001A4B58 /* LogicareTreelTag.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07E99D58E0B781CDA563E130 /* Pods-TREEL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TREEL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TREEL/Pods-TREEL.debug.xcconfig"; sourceTree = "<group>"; };
+		75735664FF7250C3A53BB18A /* Pods_TREEL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TREEL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		802D019B228BFEC5BF8E27BB /* Pods-TREEL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TREEL.release.xcconfig"; path = "Pods/Target Support Files/Pods-TREEL/Pods-TREEL.release.xcconfig"; sourceTree = "<group>"; };
+		93654EE822707221005FDB1B /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		93654EEA22707221005FDB1B /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		93654EEB22707221005FDB1B /* APIException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIException.swift; sourceTree = "<group>"; };
+		93654EEC22707221005FDB1B /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		93654EF32270739E005FDB1B /* TireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TireViewModel.swift; sourceTree = "<group>"; };
+		93654EF5227073BA005FDB1B /* TiresResponceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiresResponceModel.swift; sourceTree = "<group>"; };
+		93654EF72270984F005FDB1B /* ChartSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSeries.swift; sourceTree = "<group>"; };
+		93654EF82270984F005FDB1B /* ChartColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartColors.swift; sourceTree = "<group>"; };
+		93654EF922709850005FDB1B /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		93654EFD2270A00D005FDB1B /* TempPressRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempPressRespModel.swift; sourceTree = "<group>"; };
+		939B160D226F234E0057ABEA /* KnowUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowUsVC.swift; sourceTree = "<group>"; };
+		939B160F226F23780057ABEA /* KnowProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowProductVC.swift; sourceTree = "<group>"; };
+		939B1611226F43BF0057ABEA /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		939B1613226F45CE0057ABEA /* VehicleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleVC.swift; sourceTree = "<group>"; };
+		939B1617227043B50057ABEA /* CircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		939B161C227056610057ABEA /* TwentyTiresVehicleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyTiresVehicleVC.swift; sourceTree = "<group>"; };
+		939B161E22705A790057ABEA /* TireParameterControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TireParameterControl.swift; sourceTree = "<group>"; };
+		939B162022705A960057ABEA /* TireParameterControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TireParameterControl.xib; sourceTree = "<group>"; };
+		93B22E34226DB54200301B83 /* TREEL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TREEL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B22E37226DB54200301B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93B22E39226DB54200301B83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93B22E3C226DB54200301B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93B22E3E226DB54A00301B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93B22E41226DB54A00301B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93B22E43226DB54A00301B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E5D906226DBCB0001A4B58 /* treelVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = treelVideo.mp4; sourceTree = "<group>"; };
+		93E5D908226DC60F001A4B58 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		93E5D90A226DC628001A4B58 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		93E5D917226DC9BE001A4B58 /* Exo-Semi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Semi-Bold.ttf"; sourceTree = "<group>"; };
+		93E5D918226DC9BE001A4B58 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		93E5D919226DC9BE001A4B58 /* Exo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Regular.ttf"; sourceTree = "<group>"; };
+		93E5D91A226DC9BE001A4B58 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		93E5D91B226DC9BE001A4B58 /* Exo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Bold.ttf"; sourceTree = "<group>"; };
+		93E5D921226DCAC0001A4B58 /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		93E5D923226DCE95001A4B58 /* VehicleDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsVC.swift; sourceTree = "<group>"; };
+		93E5D928226ED145001A4B58 /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		93E5D929226ED145001A4B58 /* SensorDetectionEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDetectionEvent.swift; sourceTree = "<group>"; };
+		93E5D92A226ED145001A4B58 /* LogicareTreelTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicareTreelTag.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93B22E31226DB54200301B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B0CF963565197FC064A0C1E /* Pods_TREEL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09C8AF8671A9E95181100327 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07E99D58E0B781CDA563E130 /* Pods-TREEL.debug.xcconfig */,
+				802D019B228BFEC5BF8E27BB /* Pods-TREEL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93654EE722707221005FDB1B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				93654EE822707221005FDB1B /* APIError.swift */,
+				93654EE922707221005FDB1B /* BaseResponseModel */,
+				93654EEB22707221005FDB1B /* APIException.swift */,
+				93654EEC22707221005FDB1B /* ApiClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		93654EE922707221005FDB1B /* BaseResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				93654EEA22707221005FDB1B /* ApiResponse.swift */,
+			);
+			path = BaseResponseModel;
+			sourceTree = "<group>";
+		};
+		93654EFF2272C631005FDB1B /* Exxtra */ = {
+			isa = PBXGroup;
+			children = (
+				93E5D921226DCAC0001A4B58 /* VehicleViewController.swift */,
+				93E5D923226DCE95001A4B58 /* VehicleDetailsVC.swift */,
+			);
+			path = Exxtra;
+			sourceTree = "<group>";
+		};
+		93654F002272C6A5005FDB1B /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				93654EF922709850005FDB1B /* Chart.swift */,
+				93654EF82270984F005FDB1B /* ChartColors.swift */,
+				93654EF72270984F005FDB1B /* ChartSeries.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		93B22E2B226DB54100301B83 = {
+			isa = PBXGroup;
+			children = (
+				93B22E36226DB54200301B83 /* TREEL */,
+				93B22E35226DB54200301B83 /* Products */,
+				09C8AF8671A9E95181100327 /* Pods */,
+				AF33B13E7461218FB1D81BC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93B22E35226DB54200301B83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93B22E34226DB54200301B83 /* TREEL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93B22E36226DB54200301B83 /* TREEL */ = {
+			isa = PBXGroup;
+			children = (
+				93654F002272C6A5005FDB1B /* Graph */,
+				93654EE722707221005FDB1B /* Services */,
+				93E5D927226ED145001A4B58 /* BLE */,
+				93E5D90C226DC769001A4B58 /* Font */,
+				93E5D906226DBCB0001A4B58 /* treelVideo.mp4 */,
+				939B1617227043B50057ABEA /* CircularProgress.swift */,
+				93B22E37226DB54200301B83 /* AppDelegate.swift */,
+				93B22E39226DB54200301B83 /* ViewController.swift */,
+				93E5D926226DD310001A4B58 /* Vehiclle */,
+				93E5D925226DD2FB001A4B58 /* Master */,
+				93B22E3B226DB54200301B83 /* Main.storyboard */,
+				93B22E3E226DB54A00301B83 /* Assets.xcassets */,
+				93B22E40226DB54A00301B83 /* LaunchScreen.storyboard */,
+				93B22E43226DB54A00301B83 /* Info.plist */,
+			);
+			path = TREEL;
+			sourceTree = "<group>";
+		};
+		93E5D90C226DC769001A4B58 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				93E5D91B226DC9BE001A4B58 /* Exo-Bold.ttf */,
+				93E5D919226DC9BE001A4B58 /* Exo-Regular.ttf */,
+				93E5D917226DC9BE001A4B58 /* Exo-Semi-Bold.ttf */,
+				93E5D918226DC9BE001A4B58 /* Lato-Bold.ttf */,
+				93E5D91A226DC9BE001A4B58 /* Lato-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		93E5D925226DD2FB001A4B58 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				93E5D908226DC60F001A4B58 /* MasterViewController.swift */,
+				93E5D90A226DC628001A4B58 /* BaseViewController.swift */,
+				939B160D226F234E0057ABEA /* KnowUsVC.swift */,
+				939B160F226F23780057ABEA /* KnowProductVC.swift */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		93E5D926226DD310001A4B58 /* Vehiclle */ = {
+			isa = PBXGroup;
+			children = (
+				93654EFF2272C631005FDB1B /* Exxtra */,
+				939B1611226F43BF0057ABEA /* DemoViewController.swift */,
+				939B1613226F45CE0057ABEA /* VehicleVC.swift */,
+				939B161C227056610057ABEA /* TwentyTiresVehicleVC.swift */,
+				93654EF32270739E005FDB1B /* TireViewModel.swift */,
+				93654EFD2270A00D005FDB1B /* TempPressRespModel.swift */,
+				93654EF5227073BA005FDB1B /* TiresResponceModel.swift */,
+				939B161E22705A790057ABEA /* TireParameterControl.swift */,
+				939B162022705A960057ABEA /* TireParameterControl.xib */,
+			);
+			path = Vehiclle;
+			sourceTree = "<group>";
+		};
+		93E5D927226ED145001A4B58 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				93E5D928226ED145001A4B58 /* BLEManager.swift */,
+				93E5D929226ED145001A4B58 /* SensorDetectionEvent.swift */,
+				93E5D92A226ED145001A4B58 /* LogicareTreelTag.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		AF33B13E7461218FB1D81BC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75735664FF7250C3A53BB18A /* Pods_TREEL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93B22E33226DB54200301B83 /* TREEL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B22E46226DB54A00301B83 /* Build configuration list for PBXNativeTarget "TREEL" */;
+			buildPhases = (
+				B60C9D3E8FAD3F0466C7C409 /* [CP] Check Pods Manifest.lock */,
+				93B22E30226DB54200301B83 /* Sources */,
+				93B22E31226DB54200301B83 /* Frameworks */,
+				93B22E32226DB54200301B83 /* Resources */,
+				91F32D845FDE654E2D71969D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TREEL;
+			productName = TREEL;
+			productReference = 93B22E34226DB54200301B83 /* TREEL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93B22E2C226DB54100301B83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Treel Mobility ";
+				TargetAttributes = {
+					93B22E33226DB54200301B83 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 93B22E2F226DB54100301B83 /* Build configuration list for PBXProject "TREEL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93B22E2B226DB54100301B83;
+			productRefGroup = 93B22E35226DB54200301B83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93B22E33226DB54200301B83 /* TREEL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93B22E32226DB54200301B83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E5D907226DBCB1001A4B58 /* treelVideo.mp4 in Resources */,
+				93E5D91D226DC9BE001A4B58 /* Lato-Bold.ttf in Resources */,
+				93B22E42226DB54A00301B83 /* LaunchScreen.storyboard in Resources */,
+				93E5D920226DC9BE001A4B58 /* Exo-Bold.ttf in Resources */,
+				93E5D91F226DC9BE001A4B58 /* Lato-Regular.ttf in Resources */,
+				93B22E3F226DB54A00301B83 /* Assets.xcassets in Resources */,
+				93E5D91E226DC9BE001A4B58 /* Exo-Regular.ttf in Resources */,
+				93E5D91C226DC9BE001A4B58 /* Exo-Semi-Bold.ttf in Resources */,
+				93B22E3D226DB54200301B83 /* Main.storyboard in Resources */,
+				939B162122705A960057ABEA /* TireParameterControl.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91F32D845FDE654E2D71969D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TREEL/Pods-TREEL-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TREEL/Pods-TREEL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B60C9D3E8FAD3F0466C7C409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TREEL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93B22E30226DB54200301B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E5D92C226ED146001A4B58 /* SensorDetectionEvent.swift in Sources */,
+				93B22E3A226DB54200301B83 /* ViewController.swift in Sources */,
+				939B161F22705A790057ABEA /* TireParameterControl.swift in Sources */,
+				93E5D922226DCAC0001A4B58 /* VehicleViewController.swift in Sources */,
+				939B1612226F43BF0057ABEA /* DemoViewController.swift in Sources */,
+				93E5D92B226ED146001A4B58 /* BLEManager.swift in Sources */,
+				93654EF42270739E005FDB1B /* TireViewModel.swift in Sources */,
+				93654EEF22707221005FDB1B /* APIException.swift in Sources */,
+				939B1614226F45CE0057ABEA /* VehicleVC.swift in Sources */,
+				93654EFA22709850005FDB1B /* ChartSeries.swift in Sources */,
+				93E5D90B226DC628001A4B58 /* BaseViewController.swift in Sources */,
+				93B22E38226DB54200301B83 /* AppDelegate.swift in Sources */,
+				93E5D924226DCE95001A4B58 /* VehicleDetailsVC.swift in Sources */,
+				93654EF6227073BA005FDB1B /* TiresResponceModel.swift in Sources */,
+				93654EFB22709850005FDB1B /* ChartColors.swift in Sources */,
+				93654EEE22707221005FDB1B /* ApiResponse.swift in Sources */,
+				939B1610226F23780057ABEA /* KnowProductVC.swift in Sources */,
+				939B1618227043B50057ABEA /* CircularProgress.swift in Sources */,
+				93654EF022707222005FDB1B /* ApiClient.swift in Sources */,
+				939B161D227056610057ABEA /* TwentyTiresVehicleVC.swift in Sources */,
+				93654EFC22709850005FDB1B /* Chart.swift in Sources */,
+				939B160E226F234E0057ABEA /* KnowUsVC.swift in Sources */,
+				93654EFE2270A00D005FDB1B /* TempPressRespModel.swift in Sources */,
+				93E5D909226DC60F001A4B58 /* MasterViewController.swift in Sources */,
+				93E5D92D226ED146001A4B58 /* LogicareTreelTag.swift in Sources */,
+				93654EED22707221005FDB1B /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93B22E3B226DB54200301B83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93B22E3C226DB54200301B83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93B22E40226DB54A00301B83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93B22E41226DB54A00301B83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93B22E44226DB54A00301B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93B22E45226DB54A00301B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93B22E47226DB54A00301B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07E99D58E0B781CDA563E130 /* Pods-TREEL.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29A2R26ACF;
+				INFOPLIST_FILE = TREEL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Treel.TREEL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		93B22E48226DB54A00301B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 802D019B228BFEC5BF8E27BB /* Pods-TREEL.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29A2R26ACF;
+				INFOPLIST_FILE = TREEL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Treel.TREEL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93B22E2F226DB54100301B83 /* Build configuration list for PBXProject "TREEL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B22E44226DB54A00301B83 /* Debug */,
+				93B22E45226DB54A00301B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B22E46226DB54A00301B83 /* Build configuration list for PBXNativeTarget "TREEL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B22E47226DB54A00301B83 /* Debug */,
+				93B22E48226DB54A00301B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93B22E2C226DB54100301B83 /* Project object */;
+}
