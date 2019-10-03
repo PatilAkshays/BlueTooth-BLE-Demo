@@ -17,8 +17,9 @@ class ApiClient: NSObject {
     //MARK:- Get Vehicles Groups list
     func getAllVehicleTireData(completionHandler: @escaping (TiresResponceModel) -> Void ) {
         
-        let url = "http://demo.tmaas.in/treel_data_lg/device_details/get_device_info_deviceid.php?DeviceID=353719092011814&deviceType=treel&MgrValue=1"
-        
+//        let url = "http://demo.tmaas.in/treel_data_lg/device_details/get_device_info_devic,eid.php?DeviceID=353719092082278&deviceType=treel&MgrValue=1"
+        let url = "http://13.234.90.141/treel_data_lg/device_details/get_device_info_deviceid.php?DeviceID=353719092020914&deviceType=treel&MgrValue=1"//353719092082278
+
         let headers: HTTPHeaders = [
 //            "Accept": "application/json",//This is required
 //            "Content-Type": "application/json",
@@ -42,8 +43,9 @@ class ApiClient: NSObject {
       //MARK:- Get Vehicles Groups list
     func getAllDetailData(completionHandler: @escaping (TempPressRespModel) -> Void ) {
         
-        let url = "http://demo.tmaas.in/treel_data_lg/device_details/get_graph_data.php"
-        
+//        let url = "http://demo.tmaas.in/treel_data_lg/device_details/get_graph_data.php"
+        let url = "http://13.234.90.141/treel_data_lg/device_details/get_graph_data.php"
+
         let headers: HTTPHeaders = [
             //            "Accept": "application/json",//This is required
             //            "Content-Type": "application/json",

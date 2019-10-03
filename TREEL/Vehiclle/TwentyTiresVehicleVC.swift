@@ -88,7 +88,7 @@ class TwentyTiresVehicleVC: BaseViewController {
     
     func recomendedPressureTempCheck(tire : TireParameterControl,pressure : Int) -> Void {
         
-        if pressure > String.maxPressure || pressure < String.minPressure {
+        if pressure > String.maxPressureV || pressure < String.minPressureV {
             tire.borderColor = .red
         }else{
             tire.borderColor = .green
@@ -101,151 +101,168 @@ class TwentyTiresVehicleVC: BaseViewController {
 //            showLoading()
             //Get all vehicles and its configurations
             self.issueReportViewModel?.getAllVehicleTireData(completion: {(responceModel) in
-                let vehicleData = responceModel.vehicleData![0]
+                if responceModel.vehicleData != nil {
+                    
+                    
+                    let vehicleData = responceModel.vehicleData![0]
+                    
+                    if vehicleData.Pres_0 != nil && vehicleData.Pres_0 != "" {
+                        self.tire1A.pressureLbl.text = vehicleData.Pres_0! + " PSI"
+                        self.tire1A.tempLbl.text = vehicleData.Temp_0! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire1A, pressure: Int(vehicleData.Pres_0!)!)
+                    }else{
+                        self.tire1A.borderColor = .red
+                    }
+                    if vehicleData.Pres_1 != nil && vehicleData.Pres_1 != "" {
+                        self.tire1B.pressureLbl.text = vehicleData.Pres_1! + " PSI"
+                        self.tire1B.tempLbl.text = vehicleData.Temp_1! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire1B, pressure: Int(vehicleData.Pres_1!)!)
+                    }else{
+                        self.tire1B.borderColor = .red
+                    }
+                    if vehicleData.Pres_2 != nil && vehicleData.Pres_2 != "" {
+                        self.tire2A.pressureLbl.text = vehicleData.Pres_2! + " PSI"
+                        self.tire2A.tempLbl.text = vehicleData.Temp_2! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire2A, pressure: Int(vehicleData.Pres_2!)!)
+                    }else{
+                        self.tire2A.borderColor = .red
+                    }
+                    if vehicleData.Pres_3 != nil && vehicleData.Pres_3 != "" {
+                        self.tire2B.pressureLbl.text = vehicleData.Pres_3! + " PSI"
+                        self.tire2B.tempLbl.text = vehicleData.Temp_3! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire2B, pressure: Int(vehicleData.Pres_3!)!)
+                    }else{
+                        self.tire2B.borderColor = .red
+                    }
+                    if vehicleData.Pres_4 != nil && vehicleData.Pres_4 != "" {
+                        self.tire2C.pressureLbl.text = vehicleData.Pres_4! + " PSI"
+                        self.tire2C.tempLbl.text = vehicleData.Temp_4! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire2C, pressure: Int(vehicleData.Pres_4!)!)
+                    }else{
+                        self.tire2C.borderColor = .red
+                    }
+                    
+                    if vehicleData.Pres_5 != nil && vehicleData.Pres_5 != "" {
+                        self.tire2D.pressureLbl.text = vehicleData.Pres_5! + " PSI"
+                        self.tire2D.tempLbl.text = vehicleData.Temp_5! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire2D, pressure: Int(vehicleData.Pres_5!)!)
+                    }else{
+                        self.tire2D.borderColor = .red
+                    }
+                    if vehicleData.Pres_6 != nil && vehicleData.Pres_6 != "" {
+                        self.tire3A.pressureLbl.text = vehicleData.Pres_6! + " PSI"
+                        self.tire3A.tempLbl.text = vehicleData.Temp_6! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire3A, pressure: Int(vehicleData.Pres_6!)!)
+                    }else{
+                        self.tire3A.borderColor = .red
+                    }
+                    if vehicleData.Pres_7 != nil && vehicleData.Pres_7 != "" {
+                        self.tire3B.pressureLbl.text = vehicleData.Pres_7! + " PSI"
+                        self.tire3B.tempLbl.text = vehicleData.Temp_7! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire3B, pressure: Int(vehicleData.Pres_7!)!)
+                    }else{
+                        self.tire3B.borderColor = .red
+                    }
+                    if vehicleData.Pres_8 != nil && vehicleData.Pres_8 != "" {
+                        self.tire3C.pressureLbl.text = vehicleData.Pres_8! + " PSI"
+                        self.tire3C.tempLbl.text = vehicleData.Temp_8! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire3C, pressure: Int(vehicleData.Pres_8!)!)
+                    }else{
+                        self.tire3C.borderColor = .red
+                    }
+                    if vehicleData.Pres_9 != nil && vehicleData.Pres_9 != "" {
+                        self.tire3D.pressureLbl.text = vehicleData.Pres_9! + " PSI"
+                        self.tire3D.tempLbl.text = vehicleData.Temp_9! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire3D, pressure: Int(vehicleData.Pres_9!)!)
+                    }else{
+                        self.tire3D.borderColor = .red
+                    }
+                    if vehicleData.Pres_10 != nil && vehicleData.Pres_10 != "" {
+                        self.tire4A.pressureLbl.text = vehicleData.Pres_10! + " PSI"
+                        self.tire4A.tempLbl.text = vehicleData.Temp_6! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire4A, pressure: Int(vehicleData.Pres_10!)!)
 
-                if vehicleData.Pres_0 != nil && vehicleData.Pres_0 != "" {
-                    self.tire1A.pressureLbl.text = vehicleData.Pres_0! + " PSI"
-                    self.tire1A.tempLbl.text = vehicleData.Temp_0! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire1A, pressure: Int(vehicleData.Pres_0!)!)
-                }else{
-                    self.tire1A.borderColor = .red
+                    }else{
+                        self.tire4A.borderColor = .red
+                    }
+                    
+                   // /*
+                    if vehicleData.Pres_11 != nil && vehicleData.Pres_11 != "" {
+                        self.tire4B.pressureLbl.text = vehicleData.Pres_11! + " PSI"
+                        self.tire4B.tempLbl.text = vehicleData.Temp_11! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire4B, pressure: Int(vehicleData.Pres_11!)!)
+                    }else{
+                        self.tire5A.borderColor = .red
+                    }
+                    if vehicleData.Pres_12 != nil && vehicleData.Pres_12 != "" {
+                        self.tire4C.pressureLbl.text = vehicleData.Pres_12! + " PSI"
+                        self.tire4C.tempLbl.text = vehicleData.Temp_12! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire4C, pressure: Int(vehicleData.Pres_12!)!)
+                    }else{
+                        self.tire5A.borderColor = .red
+                    }
+                    if vehicleData.Pres_13 != nil && vehicleData.Pres_13 != "" {
+                        self.tire4D.pressureLbl.text = vehicleData.Pres_13! + " PSI"
+                        self.tire4D.tempLbl.text = vehicleData.Temp_13! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire4D, pressure: Int(vehicleData.Pres_13!)!)
+                    }else{
+                        self.tire5A.borderColor = .red
+                    }
+                    if vehicleData.Pres_14 != nil && vehicleData.Pres_14 != "" {
+                        self.tire6A.pressureLbl.text = vehicleData.Pres_14! + " PSI"
+                        self.tire6A.tempLbl.text = vehicleData.Temp_15! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire6A, pressure: Int(vehicleData.Pres_14!)!)
+//                        self.tire5A.pressureLbl.text = vehicleData.Pres_14! + " PSI"
+//                        self.tire5A.tempLbl.text = vehicleData.Temp_15! + " °C"
+//                        self.recomendedPressureTempCheck(tire: self.tire5A, pressure: Int(vehicleData.Pres_14!)!)
+                    }else{
+//                        self.tire5A.borderColor = .red
+                        self.tire6A.borderColor = .red
+                   }
+                    
+                    if vehicleData.Pres_15 != nil && vehicleData.Pres_15 != "" {
+//                        self.tire5B.pressureLbl.text = vehicleData.Pres_15! + " PSI"
+//                        self.tire5B.tempLbl.text = vehicleData.Temp_15! + " °C"
+//                        self.recomendedPressureTempCheck(tire: self.tire5B, pressure: Int(vehicleData.Pres_15!)!)
+                        self.tire6B.pressureLbl.text = vehicleData.Pres_15! + " PSI"
+                        self.tire6B.tempLbl.text = vehicleData.Temp_15! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire6B, pressure: Int(vehicleData.Pres_15!)!)
+                    }else{
+                        self.tire6B.borderColor = .red
+//                        self.tire5B.borderColor = .red
+
+                    }
+                    
+                 /*   if vehicleData.Pres_16 != nil && vehicleData.Pres_16 != "" {
+                        self.tire5C.pressureLbl.text = vehicleData.Pres_16! + " PSI"
+                        self.tire5C.tempLbl.text = vehicleData.Temp_16! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire5C, pressure: Int(vehicleData.Pres_16!)!)
+                    }else{
+                        self.tire5C.borderColor = .red
+                    }
+                    if vehicleData.Pres_17 != nil && vehicleData.Pres_17 != "" {
+                        self.tire5D.pressureLbl.text = vehicleData.Pres_17! + " PSI"
+                        self.tire5D.tempLbl.text = vehicleData.Temp_17! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire5D, pressure: Int(vehicleData.Pres_17!)!)
+                    }else{
+                        self.tire5D.borderColor = .red
+                    }
+                    if vehicleData.Pres_18 != nil && vehicleData.Pres_18 != "" {
+                        self.tire6A.pressureLbl.text = vehicleData.Pres_18! + " PSI"
+                        self.tire6A.tempLbl.text = vehicleData.Temp_18! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire6A, pressure: Int(vehicleData.Pres_18!)!)
+                    }else{
+                        self.tire6A.borderColor = .red
+                    }
+                    if vehicleData.Pres_19 != nil && vehicleData.Pres_19 != "" {
+                        self.tire6B.pressureLbl.text = vehicleData.Pres_19! + " PSI"
+                        self.tire6B.tempLbl.text = vehicleData.Temp_19! + " °C"
+                        self.recomendedPressureTempCheck(tire: self.tire6B, pressure: Int(vehicleData.Pres_19!)!)
+                    }else{
+                        self.tire6B.borderColor = .red
+                    }
+                 */
                 }
-                if vehicleData.Pres_1 != nil && vehicleData.Pres_1 != "" {
-                    self.tire1B.pressureLbl.text = vehicleData.Pres_1! + " PSI"
-                    self.tire1B.tempLbl.text = vehicleData.Temp_1! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire1B, pressure: Int(vehicleData.Pres_1!)!)
-                }else{
-                    self.tire1B.borderColor = .red
-                }
-                if vehicleData.Pres_2 != nil && vehicleData.Pres_2 != "" {
-                    self.tire2A.pressureLbl.text = vehicleData.Pres_2! + " PSI"
-                    self.tire2A.tempLbl.text = vehicleData.Temp_2! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire2A, pressure: Int(vehicleData.Pres_2!)!)
-                }else{
-                    self.tire2A.borderColor = .red
-                }
-                if vehicleData.Pres_3 != nil && vehicleData.Pres_3 != "" {
-                    self.tire2B.pressureLbl.text = vehicleData.Pres_3! + " PSI"
-                    self.tire2B.tempLbl.text = vehicleData.Temp_3! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire2B, pressure: Int(vehicleData.Pres_3!)!)
-                }else{
-                    self.tire2B.borderColor = .red
-                }
-                if vehicleData.Pres_4 != nil && vehicleData.Pres_4 != "" {
-                    self.tire2C.pressureLbl.text = vehicleData.Pres_4! + " PSI"
-                    self.tire2C.tempLbl.text = vehicleData.Temp_4! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire2C, pressure: Int(vehicleData.Pres_4!)!)
-                }else{
-                    self.tire2C.borderColor = .red
-                }
-                
-                if vehicleData.Pres_5 != nil && vehicleData.Pres_5 != "" {
-                    self.tire2D.pressureLbl.text = vehicleData.Pres_5! + " PSI"
-                    self.tire2D.tempLbl.text = vehicleData.Temp_5! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire2D, pressure: Int(vehicleData.Pres_5!)!)
-                }else{
-                    self.tire2D.borderColor = .red
-                }
-                if vehicleData.Pres_6 != nil && vehicleData.Pres_6 != "" {
-                    self.tire3A.pressureLbl.text = vehicleData.Pres_6! + " PSI"
-                    self.tire3A.tempLbl.text = vehicleData.Temp_6! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire3A, pressure: Int(vehicleData.Pres_6!)!)
-                }else{
-                    self.tire3A.borderColor = .red
-                }
-                if vehicleData.Pres_7 != nil && vehicleData.Pres_7 != "" {
-                    self.tire3B.pressureLbl.text = vehicleData.Pres_7! + " PSI"
-                    self.tire3B.tempLbl.text = vehicleData.Temp_7! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire3B, pressure: Int(vehicleData.Pres_7!)!)
-                }else{
-                    self.tire3B.borderColor = .red
-                }
-                if vehicleData.Pres_8 != nil && vehicleData.Pres_8 != "" {
-                    self.tire3C.pressureLbl.text = vehicleData.Pres_8! + " PSI"
-                    self.tire3C.tempLbl.text = vehicleData.Temp_8! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire3C, pressure: Int(vehicleData.Pres_8!)!)
-                }else{
-                    self.tire3C.borderColor = .red
-                }
-                if vehicleData.Pres_9 != nil && vehicleData.Pres_9 != "" {
-                    self.tire3D.pressureLbl.text = vehicleData.Pres_9! + " PSI"
-                    self.tire3D.tempLbl.text = vehicleData.Temp_9! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire3D, pressure: Int(vehicleData.Pres_9!)!)
-                }else{
-                    self.tire3D.borderColor = .red
-                }
-                if vehicleData.Pres_10 != nil && vehicleData.Pres_10 != "" {
-                    self.tire4A.pressureLbl.text = vehicleData.Pres_10! + " PSI"
-                    self.tire4A.tempLbl.text = vehicleData.Temp_6! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire4A, pressure: Int(vehicleData.Pres_10!)!)
-                }else{
-                    self.tire5A.borderColor = .red
-                }
-                if vehicleData.Pres_11 != nil && vehicleData.Pres_11 != "" {
-                    self.tire4B.pressureLbl.text = vehicleData.Pres_11! + " PSI"
-                    self.tire4B.tempLbl.text = vehicleData.Temp_11! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire4B, pressure: Int(vehicleData.Pres_11!)!)
-                }else{
-                    self.tire5A.borderColor = .red
-                }
-                if vehicleData.Pres_12 != nil && vehicleData.Pres_12 != "" {
-                    self.tire4C.pressureLbl.text = vehicleData.Pres_12! + " PSI"
-                    self.tire4C.tempLbl.text = vehicleData.Temp_12! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire4C, pressure: Int(vehicleData.Pres_12!)!)
-                }else{
-                    self.tire5A.borderColor = .red
-                }
-                if vehicleData.Pres_13 != nil && vehicleData.Pres_13 != "" {
-                    self.tire4D.pressureLbl.text = vehicleData.Pres_13! + " PSI"
-                    self.tire4D.tempLbl.text = vehicleData.Temp_13! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire4D, pressure: Int(vehicleData.Pres_13!)!)
-                }else{
-                    self.tire5A.borderColor = .red
-                }
-                if vehicleData.Pres_14 != nil && vehicleData.Pres_14 != "" {
-                    self.tire5A.pressureLbl.text = vehicleData.Pres_14! + " PSI"
-                    self.tire5A.tempLbl.text = vehicleData.Temp_15! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire5A, pressure: Int(vehicleData.Pres_14!)!)
-                }else{
-                    self.tire5A.borderColor = .red
-                }
-                if vehicleData.Pres_15 != nil && vehicleData.Pres_15 != "" {
-                    self.tire5B.pressureLbl.text = vehicleData.Pres_15! + " PSI"
-                    self.tire5B.tempLbl.text = vehicleData.Temp_15! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire5B, pressure: Int(vehicleData.Pres_15!)!)
-                }else{
-                    self.tire5B.borderColor = .red
-                }
-                if vehicleData.Pres_16 != nil && vehicleData.Pres_16 != "" {
-                    self.tire5C.pressureLbl.text = vehicleData.Pres_16! + " PSI"
-                    self.tire5C.tempLbl.text = vehicleData.Temp_16! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire5C, pressure: Int(vehicleData.Pres_16!)!)
-                }else{
-                    self.tire5C.borderColor = .red
-                }
-                if vehicleData.Pres_17 != nil && vehicleData.Pres_17 != "" {
-                    self.tire5D.pressureLbl.text = vehicleData.Pres_17! + " PSI"
-                    self.tire5D.tempLbl.text = vehicleData.Temp_17! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire5D, pressure: Int(vehicleData.Pres_17!)!)
-                }else{
-                    self.tire5D.borderColor = .red
-                }
-                if vehicleData.Pres_18 != nil && vehicleData.Pres_18 != "" {
-                    self.tire6A.pressureLbl.text = vehicleData.Pres_18! + " PSI"
-                    self.tire6A.tempLbl.text = vehicleData.Temp_18! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire6A, pressure: Int(vehicleData.Pres_18!)!)
-                }else{
-                    self.tire6A.borderColor = .red
-                }
-                if vehicleData.Pres_19 != nil && vehicleData.Pres_19 != "" {
-                    self.tire6B.pressureLbl.text = vehicleData.Pres_19! + " PSI"
-                    self.tire6B.tempLbl.text = vehicleData.Temp_19! + " °C"
-                    self.recomendedPressureTempCheck(tire: self.tire6B, pressure: Int(vehicleData.Pres_19!)!)
-                }else{
-                    self.tire6B.borderColor = .red
-                }
-               
-                
                 
                 
                 

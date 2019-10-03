@@ -96,24 +96,23 @@ class VehicleVC: BaseViewController, ChartDelegate {
                 
                 var tempArray : [Double] = []
                 var pressArray : [Double] = []
-                for item in responce.vehicledetails! {
-                    if item.temp != "" && item.press != "" {
-                        let tempI : Int = Int(item.temp!)!
-                        let pressI : Int = Int(item.press!)!
-                        let tempD : Double = Double(tempI)
-                        let pressD : Double = Double(pressI)
-                        tempArray.append(tempD)
-                        pressArray.append(pressD)
+                if responce.vehicledetails != nil {
+                    for item in responce.vehicledetails! {
+                        if item.temp != "" && item.press != "" {
+                            let tempI : Int = Int(item.temp!)!
+                            let pressI : Int = Int(item.press!)!
+                            let tempD : Double = Double(tempI)
+                            let pressD : Double = Double(pressI)
+                            tempArray.append(tempD)
+                            pressArray.append(pressD)
+                        }
                     }
-                  
-
                 }
+               
                 
                 self.loadTempGraph(data:tempArray)
                 self.loadPressureGraph(data: pressArray)
 
-                
-                
             })
             
         }else{

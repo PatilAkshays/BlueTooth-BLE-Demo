@@ -55,10 +55,19 @@ extension String {
     
     public static let maxPressure : Int = 30
     public static let minPressure : Int = 20
+    
+    public static let maxPressureV : Int = 150
+    public static let minPressureV : Int = 110
+    
     public static let maxTemp : Int = 60
     
-    public static let treelTag1 = "DBEF7B651F83"
-    public static let treelTag2 = "C2CA9EA0EF40"
+    //Live
+    public static let treelTag1 = "FE781FDF682F" //DBEF7B651F83
+    public static let treelTag2 = "CCC5FC678364" // For Removal //C2CA9EA0EF40
+
+    //Testing
+//    public static let treelTag1 = "D4CDE6605362" //DBEF7B651F83
+//    public static let treelTag2 = "E0CDAB4716C6" // For Removal //C2CA9EA0EF40
 
     ///DBEF7B651F83
     //C2CA9EA0EF40

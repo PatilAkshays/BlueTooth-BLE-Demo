@@ -114,8 +114,8 @@
 		93654EE722707221005FDB1B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				93654EE822707221005FDB1B /* APIError.swift */,
 				93654EE922707221005FDB1B /* BaseResponseModel */,
+				93654EE822707221005FDB1B /* APIError.swift */,
 				93654EEB22707221005FDB1B /* APIException.swift */,
 				93654EEC22707221005FDB1B /* ApiClient.swift */,
 			);
